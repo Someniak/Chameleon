@@ -95,7 +95,7 @@ class Bluecoat:
 
     def serve_content(self):
         print("[-] Serving content over HTTP server")
-        self.server = ThreadedHTTPServer("0.0.0.0", 8000)
+        self.server = ThreadedHTTPServer("0.0.0.0", 80)
         try:
             self.server.start()
         except:
